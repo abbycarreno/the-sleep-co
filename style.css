@@ -189,7 +189,9 @@ footer a {
 
 .bg-pillow {
     background-image: url('/assets/the-sleep-co-pillow.webp');
-    background-position: 50% 57%;  
+    background-position: 50% 57%;
+    background-size: cover;
+    
 }
 
 /* icon grid */

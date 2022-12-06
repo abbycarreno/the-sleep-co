@@ -157,13 +157,13 @@ a:hover {
 
 /* header & footer styles */
 
-header {
+.hero {
     background-image: url('/assets/the-sleep-co-bed.webp');
     background-size: cover;
     background-position: center;
 }
 
-header h3 {
+.hero h3 {
     font-size: 5.5rem;
     line-height: 1;
 }
@@ -171,6 +171,31 @@ header h3 {
 footer a {
     border: none;
 }
+
+/* navbar */
+
+.navbar {
+    background-color:#192b37;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid grey;
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+
+.logo h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.logo h2:hover {
+    color:#ffbe00;
+}
+
 
 /* background images */
 

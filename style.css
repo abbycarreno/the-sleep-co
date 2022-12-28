@@ -134,9 +134,7 @@ a {
     border-bottom: 1px solid;
 }
 
-a:hover {
-    color:#ffbe00; 
-}
+a:hover { color:#ffbe00; }
 
 .font-weight-light      { font-weight: 200; }
 .font-weight-normal     { font-weight: normal; }
@@ -160,11 +158,11 @@ a:hover {
 
 /* header & footer styles */
 
-.hero {
+header {
     background-image: url('/assets/the-sleep-co-bed.webp');
     background-size: cover;
     background-position: center;
-    padding: 1% 5%;
+    padding: 2% 5%;
 }
 
 .hero h3 {
@@ -180,15 +178,16 @@ footer a { border: none; }
 
 nav a {
     /* color: white; */
-    text-decoration: none;
-    border: 1px solid grey;
+    /* text-decoration: none; */
+    border: none;
     display: inline-block;
     padding: .5rem 1rem;
 }
 
 .logo h2 {
-    font-size: 3rem;
-    margin-top: 1rem;
+    /* font-size: 3rem; */
+    margin-bottom: 0;
+    /* margin-top: 1rem; */
     /* color: white; */
 }
 
@@ -200,9 +199,7 @@ nav a {
 /* background images */
 
 
-.bg-bed {
-    background-image: url('/assets/the-sleep-co-image-1.webp');
-}
+.bg-bed { background-image: url('/assets/the-sleep-co-image-1.webp'); }
 
 .bg-pug {
     background-image: url('/assets/the-sleep-co-pug.webp');
@@ -244,4 +241,23 @@ nav a {
 input, textarea {
     width: 100%;
     display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: .9rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #ffbe00;
+    outline: none;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    background-color: #ffbe00;
+    appearance: none;
+    border: 2px solid #ffbe00;
+    color: inherit;
 }

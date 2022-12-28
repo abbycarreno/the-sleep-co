@@ -238,3 +238,10 @@ nav a {
     color: rgb(120,120,125);
     line-height: 1;
 }
+
+/* buttons & forms */
+
+input, textarea {
+    width: 100%;
+    display: block;
+}

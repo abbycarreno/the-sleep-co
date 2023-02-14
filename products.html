@@ -2,14 +2,14 @@
 layout: default
 cards:
  - heading: Small Heading
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eius
-   sed ea possimus provident voluptatem ipsam saepe nisi quisquam.
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+   featured_image: /assets/the-sleep-co-bed.webp
  - heading: Small Heading
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eius
-   sed ea possimus provident voluptatem ipsam saepe nisi quisquam.
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+   featured_image: /assets/the-sleep-co-image-1.webp
  - heading: Small Heading
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eius
-   sed ea possimus provident voluptatem ipsam saepe nisi quisquam.
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+   featured_image: /assets/the-sleep-co-pillow.webp
 ---
 <!-- navbar -->
 <header class="grid text-center tall-60">
@@ -70,10 +70,10 @@ cards:
 
 <!-- cards -->
 <section class="grid padded">
-  {% for item in page.cards % }
+  {% for item in page.cards %}
   <div class="col-4_sm-6_xs-12 padded-sm">
     <div class="card">
-      <div class="bg-image portrait"></div>
+      <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
       <div class="padded-1">
         <h3>{{item.heading}}</h3>
         <p>{{item.description}}

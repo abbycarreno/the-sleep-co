@@ -20,6 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap"
         rel="stylesheet" />
 
+    <!-- animate on scroll (aos)  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 </head>
@@ -29,25 +32,39 @@
 <header class="grid text-center tall-100 md-tall-80">
 
   <div class="header-nav col-12-top grid">
-    <div class="col-5_sm-12-middle sm-padded-b-0">
+    <div class="col-5_sm-11-middle sm-padded-b-0">
         <a href="/index.html" class="logo">
             <h2>the sleep co</h2>
         </a>
     </div>
 
-    <nav class="col-7_sm-12-middle text-right sm-text-center">
+    <nav class="col-7_sm-12-middle text-right sm-text-center hide-sm">
         <a href="/index.html"> Home </a>
         <a href="/about.html"> About </a>
         <a href="/products.html"> Products </a>
         <a href="/contact.html"> Contact </a>
     </nav>
+
+    <div class="col-1 show-sm">
+        <div class="hamburger-button"> 
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
 </div>
 
+<nav class="mobile-menu bg-featured padded">
+    <a href="/index.html"> Home </a>
+    <a href="/about.html"> About </a>
+    <a href="/products.html"> Products </a>
+    <a href="/contact.html"> Contact </a>
+</nav>
+
   <div class="col-12 text-center">
-    <h3 class="font-weight-extra-bold editable">
+    <h3 class="font-weight-extra-bold editable" data-aos='fade-in' data-aos-duration="1000">
       <span class="featured-text">sleep</span> like a baby
     </h3>
-    <h1 class="font-weight-light editable">
+    <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-delay="500">
       the ultimate mattress solution
     </h1>
   </div>
@@ -55,7 +72,7 @@
 
 <!--------------- gallery / about section --------------->
 <section class="grid">
-  <div class="padded col-6_xs-12-middle">
+  <div class="padded col-6_xs-12-middle" data-aos="fade-right">
     <h2 class="editable">
       built to last a <span class="featured-text">lifetime</span>
     </h2>
@@ -80,7 +97,7 @@
     <!-- background image pug sleeping -->
   </div>
 
-  <div class="padded col-6_xs-12-middle editable">
+  <div class="padded col-6_xs-12-middle editable" data-aos="fade-left">
     <h2>so <span class="featured-text">soft</span> you'll melt</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
@@ -94,7 +111,7 @@
 <!--------------- feature icon grid --------------->
 
 <section class="padded grid-center bg-dark">
-  <div class="padded-sm col-12 text-center">
+  <div class="padded-sm col-12 text-center" data-aos="fade-in">
     <h2><span class="featured-text">features</span> you will love</h2>
   </div>
 
@@ -176,6 +193,13 @@
         </div>
     </footer>
 
-</body>
+    <!-- add jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- animate on scroll (aos) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom JS file -->
+    <script src="/app.js"></script>
+</body>
 </html>

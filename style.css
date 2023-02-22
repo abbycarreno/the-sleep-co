@@ -257,6 +257,23 @@ nav a {
     padding: 0.5%;
 }
 
+.gallery .gallery-item {
+    border-bottom: none;
+}
+
+/* background of gallery when active */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in{
+    opacity: 0.875;
+}
+
+.lg-sub-html {
+    background-color: rgba(20,20,20,0.95);
+}
+
 /* fa icons --------------*/
 
 .fa-solid, i {
@@ -298,7 +315,7 @@ textarea:focus {
     outline: none;
 }
 
-button {
+.button {
     padding: 0.5rem 2rem;
     background-color: #ffbe00;
     appearance: none;

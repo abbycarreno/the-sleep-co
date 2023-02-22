@@ -23,6 +23,9 @@
     <!-- animate on scroll (aos)  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 
+    <!-- lightgallery for lightbox functionality -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 </head>
@@ -73,48 +76,111 @@
   </header>
 
 <section class="padded">
-    <div class="gallery grid">
+  <h2>Popup Gallery</h2>
+    
+  <div class="gallery grid" id="lightgallery">
 
         
-        <div class="col-6">
+        <a class="col-6 gallery-item" href="/assets/the-sleep-co-image-1.webp">
           <div class="bg-image square" 
                style="background-image: url('/assets/the-sleep-co-image-1.webp');">
-            </div>
-        </div>
+          </div>
+        </a>
         
-        <div class="col-6">
+        <a class="col-6 gallery-item" href="/assets/the-sleep-co-bed.webp">
           <div class="bg-image square" 
                style="background-image: url('/assets/the-sleep-co-bed.webp');">
-            </div>
-        </div>
+          </div>
+        </a>
         
-        <div class="col-12">
+        <a class="col-12 gallery-item" href="/assets/the-sleep-co-pug.webp">
           <div class="bg-image landscape" 
                style="background-image: url('/assets/the-sleep-co-pug.webp');">
-            </div>
-        </div>
+          </div>
+        </a>
         
-        <div class="col-4">
+        <a class="col-4 gallery-item" href="/assets/the-sleep-co-image-1.webp">
           <div class="bg-image landscape" 
                style="background-image: url('/assets/the-sleep-co-image-1.webp');">
-            </div>
-        </div>
+          </div>
+        </a>
         
-        <div class="col-4">
+        <a class="col-4 gallery-item" href="/assets/the-sleep-co-pug.webp">
           <div class="bg-image landscape" 
                style="background-image: url('/assets/the-sleep-co-pug.webp');">
-            </div>
-        </div>
+          </div>
+        </a>
         
-        <div class="col-4">
+        <a class="col-4 gallery-item" href="/assets/the-sleep-co-bed.webp">
           <div class="bg-image landscape" 
                style="background-image: url('/assets/the-sleep-co-bed.webp');">
-            </div>
-        </div>
+          </div>
+        </a>
         
 
+  </div>
+
+  <div class="gallery grid" id="lightgallery-2">
+
+    <a class="button" href="/assets/the-sleep-co-image-1.webp" title="test title">
+      View Our Work
+    </a>
+    <a href="/assets/the-sleep-co-image-1.webp" title="test title">
+    <a href="/assets/the-sleep-co-bed.webp" title="test title">
+    <a href="/assets/the-sleep-co-pug.webp" title="test title">
+    <a href="/assets/the-sleep-co-bed.webp" title="test title">
+    <a href="/assets/the-sleep-co-image-1.webp" title="test title">
+    <a href="/assets/the-sleep-co-pug.webp" title="test title">
+
+
+  </div>
+</section>
+  <!-- standard gallery -->
+<section class="padded">
+  <h2>Standard Gallery</h2>
+  <div class="gallery grid">
+ 
+
+    
+    <div class="col-6">
+      <div class="bg-image square" 
+           style="background-image: url('/assets/the-sleep-co-image-1.webp');">
+      </div>
     </div>
+    
+    <div class="col-6">
+      <div class="bg-image square" 
+           style="background-image: url('/assets/the-sleep-co-bed.webp');">
+      </div>
+    </div>
+    
+    <div class="col-12">
+      <div class="bg-image landscape" 
+           style="background-image: url('/assets/the-sleep-co-pug.webp');">
+      </div>
+    </div>
+    
+    <div class="col-4">
+      <div class="bg-image landscape" 
+           style="background-image: url('/assets/the-sleep-co-image-1.webp');">
+      </div>
+    </div>
+    
+    <div class="col-4">
+      <div class="bg-image landscape" 
+           style="background-image: url('/assets/the-sleep-co-pug.webp');">
+      </div>
+    </div>
+    
+    <div class="col-4">
+      <div class="bg-image landscape" 
+           style="background-image: url('/assets/the-sleep-co-bed.webp');">
+      </div>
+    </div>
+    
 
+  </div>
+</section>
       <!-- <div class="gallery grid">
         <div class="col-6">
           <div class="bg-image square bg-bed"></div>
@@ -135,7 +201,6 @@
           <div class="bg-image landscape bg-bed"></div>
         </div>
       </div> -->
-</section>
     <!--------------- footer --------------->
 
     <footer class="padded grid-spaceBetween bg-dark">
@@ -167,6 +232,9 @@
 
     <!-- animate on scroll (aos) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- lightgallery for lightbox functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js" integrity="sha512-dSI4QnNeaXiNEjX2N8bkb16B7aMu/8SI5/rE6NIa3Hr/HnWUO+EAZpizN2JQJrXuvU7z0HTgpBVk/sfGd0oW+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- custom JS file -->
     <script src="/app.js"></script>
